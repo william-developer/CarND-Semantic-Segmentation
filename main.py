@@ -248,8 +248,7 @@ def run():
     # TODO: Train NN using the train_nn function
     train_nn(sess, epochs, batch_size, get_batches_fn, train_op,
              cross_entropy_loss, input_layer,
-             correct_label_tensor, keep_prob_tensor, learning_rate_tensor,
-             saver, save_model_path)
+             correct_label_tensor, keep_prob_tensor, learning_rate_tensor)
 
     save_path = saver.save(sess, save_model_path)
 
